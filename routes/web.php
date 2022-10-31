@@ -20,19 +20,44 @@ Route::get('/signup', function () {
     return view('signup');
 });
 
+//Admin Route:
+Route::get('/admin/dashboard', function () {
+    return view('partial.admin.dashboard');
+});
+Route::get('/admin/user', function () {
+    return view('partial.admin.user');
+});
+Route::get('/admin/teacher', function () {
+    return view('partial.admin.teacher');
+});
+Route::get('/admin/students', function () {
+    return view('partial.admin.students');
+});
+Route::get('/admin/score', function () {
+    return view('partial.admin.score');
+});
+
 //Teacher Route:
-Route::get('/', function () {
+Route::get('/teacher/dashboard', function () {
     return view('partial.teacher.dashboard');
 });
 
-Route::get('/students', function () {
+Route::get('/teacher/students', function () {
     return view('partial.teacher.students');
 });
 
-Route::get('/grading', function () {
+Route::get('/teacher/grading', function () {
     return view('partial.teacher.grading');
 });
 
-Route::get('/score', function () {
+Route::get('/teacher/score', function () {
     return view('partial.teacher.score');
+});
+
+//Student Route:
+Route::get('/student/subject', function () {
+    return view('partial.student.subject');
+});
+Route::get('/student/score', function () {
+    return view('partial.student.score');
 });
