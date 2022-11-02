@@ -1,4 +1,4 @@
 @extends('layout')
 @section('content')
-    hello
+    admin dashboard
 @endsection
